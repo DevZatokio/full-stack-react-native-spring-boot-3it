@@ -1,4 +1,21 @@
-# React Native
+# Compilation
+
+## React Native
+
+### Android
+
+### IOS
+
+
+
+
+
+
+
+
+
+
+# Preparación React Native + React native Navigation
 
 ```bash
   Run instructions for Android:
@@ -15,7 +32,7 @@
   Run instructions for macOS:
     • See https://aka.ms/ReactNativeGuideMacOS for the latest up-to-date instructions.
 ```
-## Install Componnet
+## Install Component
 
 ```bash
 yarn add --dev --exact prettier

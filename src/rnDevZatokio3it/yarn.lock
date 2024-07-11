@@ -8136,7 +8136,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pretty-format@npm:^26.0.1, pretty-format@npm:^26.5.2, pretty-format@npm:^26.6.2":
+"pretty-format@npm:^26.5.2, pretty-format@npm:^26.6.2":
   version: 26.6.2
   resolution: "pretty-format@npm:26.6.2"
   dependencies:
@@ -8524,18 +8524,6 @@ __metadata:
   version: 2.6.0
   resolution: "react-native-status-bar-height@npm:2.6.0"
   checksum: ee9e95ce30d346e113ecb68d6db66a5a2653263b03605428558e11956840bcc7498282c450a8bcc1c03ced9372ede6c4a5c51ab133c563492acedf328e8feecb
-  languageName: node
-  linkType: hard
-
-"react-native-testing-library@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "react-native-testing-library@npm:6.0.0"
-  dependencies:
-    pretty-format: ^26.0.1
-  peerDependencies:
-    react: ">=16.0.0"
-    react-test-renderer: ">=16.0.0"
-  checksum: 291c0e54f29e68733ec73a9ec201991a3ad7d14a8b624ce8e69fdd9306d63198511882a56d8d4ea40349c7a48468fc6eba5cf5043397cbe9974dd9fcd3d37e6a
   languageName: node
   linkType: hard
 
@@ -8988,7 +8976,6 @@ __metadata:
     react-native-permissions: ^4.1.5
     react-native-picker-select: ^9.1.3
     react-native-reanimated: ^3.13.0
-    react-native-testing-library: ^6.0.0
     react-native-uuid: ^2.0.2
     react-test-renderer: ^18.3.1
     ts-jest: ^29.2.2
