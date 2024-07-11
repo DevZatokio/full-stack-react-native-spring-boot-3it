@@ -4,15 +4,68 @@
 
 ### Android
 
+```bash
+  cd "./rnDevZatokio3it"
+  npx react-native run-android
+```
+
+### Build android Error Component 74 react-native-navigation
+Modificar url node_modules/react-native-navigation/autolink/postlink/path.js
+```bash
+import com.facebook.react.common.ReactConstants;
+
+-|| ((oldStyle & Typeface.BOLD) != 0 && weight == ReactTextShadowNode.UNSET)) {
++|| ((oldStyle & Typeface.BOLD) != 0 && weight == ReactConstants.UNSET)) {
+
+-|| ((oldStyle & Typeface.ITALIC) != 0 && style == ReactTextShadowNode.UNSET)) {
++|| ((oldStyle & Typeface.ITALIC) != 0 && style == ReactConstants.UNSET)) {
+```
+
 ### IOS
 
+```bash
+  cd "./rnDevZatokio3it"
+  npx react-native run-ios
+```
+### Modify 'AppDelegate.m'
+```m
+#import "AppDelegate.h"
+#import <ReactNativeNavigation/ReactNativeNavigation.h>
+
+@implementation AppDelegate
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [ReactNativeNavigation bootstrapWithDelegate:self launchOptions:launchOptions];
+    return YES;
+}
+```
+
+### Ensure that 'AppDelegate.h' includes:
+
+```h
+#import <ReactNativeNavigation/ReactNativeNavigation.h>
+```
+
+```bash
+pod install --project-directory=ios
+npx pod-install
+```
 
 
+## Sprint Boot
 
+### Run Spring Boot
 
+```bash
+  cd "./springboot-3it"
+  mvn spring-boot:run
+```
+### Run Test Spring Boot
 
-
-
+```bash
+  cd "./springboot-3it"
+  mvn test
+```
 
 
 # Preparación React Native + React native Navigation
@@ -20,10 +73,10 @@
 ```bash
   Run instructions for Android:
     • Have an Android emulator running (quickest way to get started), or a device connected.
-    • cd "/Users/devzatokio/Desktop/Proyeto3it/rnDevZatokio3it" && npx react-native run-android
+    • cd "./rnDevZatokio3it" && npx react-native run-android
   
   Run instructions for iOS:
-    • cd "/Users/devzatokio/Desktop/Proyeto3it/rnDevZatokio3it"
+    • cd "./rnDevZatokio3it"
     • npx react-native run-ios
     - or -
     • Open rnDevZatokio3it/ios/rnDevZatokio3it.xcworkspace in Xcode or run "xed -b ios"
@@ -61,12 +114,11 @@ yarn jest
 ```
 
 ## Add Fonts
-
 ```bash
 npx react-native-asset
 ```
 
-## Install React Native Navigation Next error
+## Install React Native Navigation Next Error
 
 Modificar url node_modules/react-native-navigation/autolink/postlink/path.js
 ```js
@@ -77,7 +129,7 @@ npx rnn-link
 ```
 ## Android
 ### Modify 'MainActivity.kt'
-```kotlin
+```kt
 ...
 
 import com.reactnativenavigation.NavigationActivity
@@ -87,7 +139,7 @@ class MainActivity : NavigationActivity() {
 }
 ```
 ### Modify 'MainApplication.kt'
-```kotlin
+```kt
 ...
 
 import android.app.Application;
