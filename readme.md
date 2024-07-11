@@ -2,6 +2,19 @@
 
 ## React Native
 
+### Primary Install Dependencies
+
+```bash
+  cd "./rnDevZatokio3it"
+  yarn
+```
+
+### Run Test React Native
+```bash
+  cd "./rnDevZatokio3it"
+  yarn test
+```
+
 ### Android
 
 ```bash
@@ -53,6 +66,13 @@ npx pod-install
 
 
 ## Sprint Boot
+
+### Primary Install Dependencies
+
+```bash
+  cd "./springboot-3it"
+  mvn
+```
 
 ### Run Spring Boot
 
@@ -230,9 +250,11 @@ npx pod-install
 
 # Spring Boot
 
-## Install 
+## Install Dependencies
 
-```bash
+Directory springboot-3it add the following dependencies:
+
+```bash ./springboot-3it/pom.xml
 <dependency>
   <groupId>org.springframework.boot</groupId>
   <artifactId>spring-boot-starter-test</artifactId>
@@ -266,9 +288,10 @@ npx pod-install
 mvn spring-boot:run
 ```
 
-## Configuration
+## Configuration Database In-Memory
+Install H2 
 
-```bash
+```bash ./springboot-3it/src/main/resources/application.properties
 spring.datasource.url=jdbc:h2:mem:devzatokio
 spring.datasource.driverClassName=org.h2.Driver
 spring.datasource.username=sa
