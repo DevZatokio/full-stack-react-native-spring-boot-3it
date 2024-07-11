@@ -3,7 +3,7 @@ import ReactUUID from 'react-native-uuid';
 import moment from 'moment';
 export const useIsAndroid = Platform.OS === 'android';
 export const useIsIOS = Platform.OS === 'ios';
-export const usePlatformOS = Platform.OS;
+export const usePlatformOS = () => Platform.OS as 'android' | 'ios';;
 export const useSelect = Platform.select;
 export const useDimensionsWindow = Dimensions.get('window');
 export const useDimensionsScreen = Dimensions.get('screen');

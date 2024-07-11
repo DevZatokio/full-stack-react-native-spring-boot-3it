@@ -1,3 +1,4 @@
 export interface PropsNavigationFunctionComponent {
-  name: string;
+  componentId: string; // Add componentId prop to match NavigationProps
+  componentName: string; // Add componentName prop if needed
 }

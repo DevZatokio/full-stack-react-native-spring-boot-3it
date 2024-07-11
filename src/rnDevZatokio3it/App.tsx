@@ -1,12 +1,10 @@
 import {Navigation, NavigationFunctionComponent} from 'react-native-navigation';
 import {SafeAreaView, StatusBar, TouchableOpacity, View} from 'react-native';
 import CustomText from './src/customs/CustomText';
-import {PropsNavigationFunctionComponent} from './src/interfaces';
 import {Colors} from './src/configs';
+import { PropsNavigationFunctionComponent } from './src/interfaces';
 
-const App: NavigationFunctionComponent<
-  PropsNavigationFunctionComponent
-> = ({componentId, componentName}) => {
+const App: NavigationFunctionComponent<PropsNavigationFunctionComponent> = ({componentId, componentName}) => {
 
 
   const onPressSurvey = () => {
@@ -23,7 +21,6 @@ const App: NavigationFunctionComponent<
       }
     });
   }
-
   
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: Colors.light_fa}}>
