@@ -4,6 +4,8 @@ public class MusicStyleCountDTO {
   private String musicStyle;
   private long count;
 
+  public MusicStyleCountDTO() {}
+
   public MusicStyleCountDTO(String musicStyle, long count) {
       this.musicStyle = musicStyle;
       this.count = count;

@@ -36,6 +36,13 @@ yarn add react-native-picker-select @react-native-picker/picker
 yarn add react-native-charts-wrapper
 ```
 
+## Test 
+
+```bash
+yarn add -D jest @testing-library/react-native @testing-library/jest-native
+yarn jest
+```
+
 ## Add Fonts
 
 ```bash

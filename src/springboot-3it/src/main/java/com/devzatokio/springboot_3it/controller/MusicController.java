@@ -26,5 +26,4 @@ public class MusicController {
       return musicStyleRepository.findAll();
     }
   }
-
 }
