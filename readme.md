@@ -1,6 +1,21 @@
 # Compilation
 
 ## React Native
+Estructura de carpetas en rnDevZatokio3it model-view-controller typescript
+```bash
+  ├── src
+    ├── assets
+    ├── configs
+    ├── customs
+    ├── hooks
+    ├── interfaces
+    ├── models
+    ├── pages
+    ├── routers
+    ├── styles
+    └── utils
+  └── index.js
+```
 
 ### Primary Install Dependencies
 
@@ -66,7 +81,32 @@ npx pod-install
 
 
 ## Sprint Boot
+Estructura de carpetas en springboot-3it model-view-controller
+```bash
+├── src
+   ├── main
+      ├── java
+         └── com
+             └── devzatokio
+                 └── springboot_3it
+                     ├── configs 
+                     ├── controller
+                     ├── dto
+                     ├── model
+                     ├── repository
+                     └── service
+```
 
+### Configuration Database In-Memory
+Add insert src/springboot-3it/src/main/java/com/devzatokio/springboot_3it/configs/LoadDatabase.java
+```java
+  @Bean
+  CommandLineRunner initDatabase(MusicStyleRepository repository) {
+      return args -> {
+            repository.save(new MusicStyle(1L, "Rock", "rock"));
+      }
+  }
+```
 ### Primary Install Dependencies
 
 ```bash
@@ -86,7 +126,6 @@ npx pod-install
   cd "./springboot-3it"
   mvn test
 ```
-
 
 # Preparación React Native + React native Navigation
 
@@ -253,7 +292,7 @@ npx pod-install
 ## Install Dependencies
 
 Directory springboot-3it add the following dependencies:
-
+add pom.xml: ./springboot-3it/pom.xml
 ```bash ./springboot-3it/pom.xml
 <dependency>
   <groupId>org.springframework.boot</groupId>
@@ -290,7 +329,7 @@ mvn spring-boot:run
 
 ## Configuration Database In-Memory
 Install H2 
-
+add ./springboot-3it/src/main/resources/application.properties
 ```bash ./springboot-3it/src/main/resources/application.properties
 spring.datasource.url=jdbc:h2:mem:devzatokio
 spring.datasource.driverClassName=org.h2.Driver
